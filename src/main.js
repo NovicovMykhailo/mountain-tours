@@ -1,6 +1,5 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import.meta.glob(['./img/**']);
 
 import './js/modal-slider';
 import './js/scroll';
