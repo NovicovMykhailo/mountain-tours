@@ -24,7 +24,7 @@
 }
 
 .advantages-list > li:after {
-  content: url('../assets/list-star.svg');
+  content: url('../img/list-star.svg');
   position: absolute;
   left: 135px;
   bottom: 5px;

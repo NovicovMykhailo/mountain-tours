@@ -1,14 +1,8 @@
 import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
-Fancybox.bind('[data-fancybox = modal]', {
-  fullScreen: {
-    requestOnStart: true,
-  },
-  
-});
 
-Fancybox.bind('[data-fancybox = tour]', {
+Fancybox.bind('[data-fancybox]', {
   fullScreen: {
     requestOnStart: true,
   },

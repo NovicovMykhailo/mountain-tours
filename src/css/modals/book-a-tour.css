@@ -58,7 +58,7 @@
   background-color: #e7e6e6;
 }
 .checkmark:after {
-  content: url('../../assets/check.svg');
+  content: url('../../img/check.svg');
   position: absolute;
   display: none;
   top: -28%;
