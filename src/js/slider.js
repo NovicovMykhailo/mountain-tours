@@ -3,7 +3,7 @@ $(window).on('load', function () {
   $('.modal-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: 1,
     arrows: false,
     dots: true,
   
