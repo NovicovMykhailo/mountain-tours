@@ -1,0 +1,66 @@
+
+
+.hero-box {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.hero-subtitle {
+  width: 675px;
+
+  margin-bottom: 60px;
+
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.link-bar {
+  position: absolute;
+  right: -120px;
+  bottom: -100px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  transform: translateX(-120px);
+}
+.link-bar_icon {
+  width: 100%;
+  height: auto;
+  transition: transform var(--base-transition);
+}
+
+.link-bar > li:hover .link-bar_icon {
+  transform: scale(1.2);
+}
+
+.hero {
+  background-color: #565554;
+  background-image: image-set(
+    url('../assets//photos/hero/hero_desk_1920hero-dsk.jpg') 1x,
+    url('../assets//photos/hero/hero_desk_1920hero-dsk@2x.jpg') 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 975px;
+  padding: 258px 0 266px 0;
+  z-index: -1;
+}

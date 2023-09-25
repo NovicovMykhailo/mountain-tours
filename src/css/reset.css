@@ -1,4 +1,4 @@
-/* Reset styles */
+  /* Reset styles */
 h1,
 h2,
 h3,
@@ -30,6 +30,6 @@ button {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%; */
+  /* height: auto; */
 }

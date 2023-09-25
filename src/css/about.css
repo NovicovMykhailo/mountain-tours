@@ -1,0 +1,16 @@
+.about {
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.about > p:nth-child(2) {
+  margin-bottom: 8px;
+}
+.about > p {
+  width: 1170px;
+  margin: 0 auto;
+  color: var(--secondary-text);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
