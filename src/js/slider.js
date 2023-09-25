@@ -12,4 +12,4 @@ $('.gallery-list').slick({
 
 
 
-/**https://github.com/kenwheeler/slick/ */
+
