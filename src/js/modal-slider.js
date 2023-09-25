@@ -9,3 +9,10 @@
 //     return "<span class='dot'></span>";
 //   },
 // });
+
+setTimeout(function(){
+    $('.slick-cloned [data-fancybox]').each(function(){
+        let attr = $(this).attr('data-fancybox');
+        $(this).removeAttr('data-fancybox').attr('data-fancybox-trigger',attr);
+    });
+}, 300);

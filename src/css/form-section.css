@@ -9,8 +9,8 @@
 
   background-color: #565554;
   background-image: image-set(
-    url('./img/photos/bottom-form/image_3_bottom-form-dsk.jpg') 1x,
-    url('./img/photos/bottom-form/image_3_bottom-form-dsk@2x.jpg') 2x
+    url('../img/photos/bottom-form/image_3_bottom-form-dsk.jpg') 1x,
+    url('../img/photos/bottom-form/image_3_bottom-form-dsk@2x.jpg') 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
