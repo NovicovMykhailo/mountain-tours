@@ -151,6 +151,10 @@ body.modal-open {
 .fancybox__backdrop{
 background-color: #20232199 !important;
 }
+.fancybox__slide::-webkit-scrollbar{
+  display: none !important;
+}
+
 /* 
 @media (prefers-color-scheme: light) {
   :root {
