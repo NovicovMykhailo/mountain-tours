@@ -5,9 +5,10 @@ Fancybox.bind('[data-fancybox]', {
   fullScreen: {
     requestOnStart: true,
   },
-  customPaging: function (slider, i) {
-    return "<span class='dot'></span>";
+  Carousel: {
+    Navigation: false,
   },
+
   on: {
     reveal: data => {
       if (!data.container.outerText.includes('Book a tour')) {
@@ -25,28 +26,30 @@ Fancybox.bind('[data-fancybox]', {
               return "<span class='dot'></span>";
             },
           });
+      }else{
+      
       }
     },
-    close: (data) => {
-    console.log('data', data)
-  
-      const sliders = document.querySelectorAll('.slick-initialized');
+    close: data => {
+      if (!data.container.outerText.includes('Book a tour')) {
+        const sliders = document.querySelectorAll('.slick-initialized');
 
-      sliders.forEach(item => {
-        $(item).slick('unslick');
-      });
+        sliders.forEach(item => {
+          $(item).slick('unslick');
+        });
 
-      $('.gallery-list').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-        initialSlide: 4,
-        appendArrows: '.slider-arrows',
-        prevArrow: '.left',
-        nextArrow: '.right',
-        focusOnSelect: true,
-      });
+        $('.gallery-list').slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: true,
+          dots: false,
+          initialSlide: 4,
+          appendArrows: '.slider-arrows',
+          prevArrow: '.left',
+          nextArrow: '.right',
+          focusOnSelect: true,
+        });
+      }
     },
   },
 });

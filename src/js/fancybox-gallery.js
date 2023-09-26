@@ -17,6 +17,6 @@ Fancybox.bind('[data-fancybox = gallery]', {
       middle: [],
       right: ["slideshow", "close"],
     },
-  },
+  }
   });    
 
