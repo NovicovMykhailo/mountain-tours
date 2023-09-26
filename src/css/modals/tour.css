@@ -57,6 +57,7 @@
   font-weight: 500;
   margin-bottom: 23px;
   z-index: 11;
+  margin: auto 0;
 }
 .tour-stripe {
   display: flex;
