@@ -11,6 +11,5 @@ export default defineConfig({
     },
     outDir: '../dist',
   },
-  publicDir: 'public',
   plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 });
