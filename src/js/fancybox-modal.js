@@ -9,23 +9,27 @@ Fancybox.bind('[data-fancybox]', {
     return "<span class='dot'></span>";
   },
   on: {
-    reveal: () => {
-      $('.modal-slider')
-        .not('.slick-clone')
-        .slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 0,
-          arrows: false,
-          dots: true,
-          infinite: false,
+    reveal: data => {
+      if (!data.container.outerText.includes('Book a tour')) {
+        $('.modal-slider')
+          .not('.slick-clone')
+          .slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            arrows: false,
+            dots: true,
+            infinite: false,
 
-          customPaging: function (slider, i) {
-            return "<span class='dot'></span>";
-          },
-        });
+            customPaging: function (slider, i) {
+              return "<span class='dot'></span>";
+            },
+          });
+      }
     },
-    close: () => {
+    close: (data) => {
+    console.log('data', data)
+  
       const sliders = document.querySelectorAll('.slick-initialized');
 
       sliders.forEach(item => {
@@ -42,7 +46,7 @@ Fancybox.bind('[data-fancybox]', {
         prevArrow: '.left',
         nextArrow: '.right',
         focusOnSelect: true,
-      })
+      });
     },
   },
 });
