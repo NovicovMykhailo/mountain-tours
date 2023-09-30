@@ -1,0 +1,86 @@
+@import url('../header/burger-btn-styles.css');
+
+.mob-menu {
+  display: block;
+  position: fixed;
+  padding: 20px 32px;
+  top: 0;
+  left: 0;
+  width: 233px;
+  height: 100vh;
+  background: #202321b3;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  z-index: 20;
+}
+
+.mob-menu.active,
+.modal-backdrop.active {
+  transform: translateX(0);
+}
+
+.modal-backdrop {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+  background: linear-gradient(
+    0deg,
+    rgba(32, 35, 33, 0.7) 0%,
+    rgba(32, 35, 33, 0.7) 100%
+  );
+}
+
+.mob-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 70px;
+}
+
+.mobile-nav {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    width: 374px;
+    padding: 24px 82px;
+  }
+  .mob-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 100px;
+  }
+  .mobile-nav-list {
+    gap: 40px;
+  }
+  .mobile-nav {
+    font-weight: 500;
+  }
+  .modal-backdrop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mob-menu {
+    display: none;
+  }
+  .modal-backdrop {
+    display: none;
+  }
+}

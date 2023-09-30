@@ -1,5 +1,5 @@
 .form {
-  height: 1074px;
+  padding: 116px 32px;
 
   background-color: darkgray;
   display: flex;
@@ -9,68 +9,133 @@
 
   background-color: #565554;
   background-image: image-set(
-    url('../img/photos/bottom-form/image_3_bottom-form-dsk.jpg') 1x,
-    url('../img/photos/bottom-form/image_3_bottom-form-dsk@2x.jpg') 2x
+    url('../img/photos/bottom-form/image_3_bottom-form-mob.jpg') 1x,
+    url('../img/photos/bottom-form/image_3_bottom-form-mob@2x.jpg') 2x
   );
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .form-container {
-  width: 774px;
+  width: 100%;
+  max-width: 311px;
   background: var(--LightText);
-  padding: 60px 46px;
+  padding: 28px 20px;
   color: var(--primary-text);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .form-title {
-  font-size: 48px;
   font-weight: 500;
-  margin-bottom: 32px;
+  font-size: 20px;
   text-align: center;
 }
 .form-descr {
-  font-size: 20px;
   font-weight: 400;
+  width: 243px;
   color: var(--secondary-text);
-  margin: 0 auto 36px auto;
-  width: 502px;
+  margin: 20px auto 24px auto;
+  font-size: 14px;
   text-align: center;
 }
 .bottom-form {
   width: 100%;
-  padding: 0 53px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 .form-fields {
   outline: none;
   border: none;
-
-  font-size: 24px;
-  font-weight: 400;
-  color: var(--secondary-text);
-
+  border-bottom: 1px solid #a3a5a3;
   background: transparent;
   cursor: pointer;
-  padding: 8px 10px;
-  border-bottom: 1px solid #a3a5a3;
-}
-
-.form-fields::placeholder {
-  font-family: inherit;
-  font-size: 24px;
-  font-weight: 400;
   color: var(--secondary-text);
 }
+
+.form-fields,
+.form-fields::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 4px;
+}
+
 .bottom-form-btn {
   width: 100%;
-  margin-top: 44px;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    background-image: image-set(
+      url('../img/photos/bottom-form/image_3_bottom-form-tabl.jpg') 1x,
+      url('../img/photos/bottom-form/image_3_bottom-form-tabl@2x.jpg') 2x
+    );
+  }
+  .form-container {
+    max-width: 478px;
+    padding: 40px 42px;
+  }
+  .form-title {
+    font-size: 32px;
+  }
+  .form-descr {
+    margin: 24px auto 32px auto;
+    font-size: 18px;
+    width: 374px;
+  }
+  .form-fields,
+  .form-fields::placeholder {
+    font-size: 20px;
+    gap: 24px;
+    width: 354px;
+  }
+
+  .bottom-form-btn {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form {
+    background-image: image-set(
+      url('../img/photos/bottom-form/image_3_bottom-form-dsk.jpg') 1x,
+      url('../img/photos/bottom-form/image_3_bottom-form-dsk@2x.jpg') 2x
+    );
+  }
+  .form-container {
+    max-width: 774px;
+    padding: 60px 46px;
+  }
+  .form-descr {
+    width: 502px;
+  }
+  .form-title {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+  .form-descr {
+    font-size: 20px;
+    margin: 0 auto 36px auto;
+  }
+  .form-fields,
+  .form-fields::placeholder {
+    font-size: 24px;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .bottom-form {
+    padding: 0 53px;
+
+  }
+  .bottom-form-btn {
+
+    margin-top: 44px;
+  }
 }

@@ -3,11 +3,14 @@
   gap: 20px;
   justify-content: center;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.review-list > .review-card:nth-child(3) {
+  display: none;
 }
 .review-card {
-
-  max-width: 377px;
-  width: calc(33% - 10px);
+  width: 100%;
   color: var(--primary-text);
   font-size: 28px;
   font-weight: 600;
@@ -18,12 +21,10 @@
 }
 .card-bg {
   height: 134px;
-
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-
 }
 .user-bar {
   display: flex;
@@ -33,7 +34,6 @@
   gap: 20px;
   margin-top: 67px;
 }
-
 .user-photo {
   width: 125px;
   height: 125px;
@@ -42,7 +42,6 @@
   object-fit: contain;
   overflow: hidden;
 }
-
 .user-name {
   color: var(--accent-color);
   font-size: 28px;
@@ -54,38 +53,59 @@
   color: var(--secondary-text);
   font-weight: 400;
 }
-
-.review-card-front{
+.review-card-front {
   border: 1px solid var(--accent-color);
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 
-
-    backface-visibility: hidden;
-    transition: transform var(--base-transition);
-    transform: perspective(600px) rotateY(0deg);
+  backface-visibility: hidden;
+  transition: transform var(--base-transition);
+  transform: perspective(600px) rotateY(0deg);
 }
-
 .review-card:is(:hover, :focus) .review-card-front {
-    transform: rotateY(-180deg);
-  }
-
-.review-card-back{
+  transform: rotateY(-180deg);
+}
+.review-card-back {
   border: 1px solid var(--accent-color);
-    height: 100%;
-    top: 0;
-    left: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
 
-    overflow: hidden;
+  overflow: hidden;
 
-    backface-visibility: hidden;
-    transition: transform var(--base-transition);
-    transform: perspective(600px) rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: transform var(--base-transition);
+  transform: perspective(600px) rotateY(-180deg);
+}
+.review-card-back > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+
+}
+.review-card:is(:hover, :focus) .review-card-back {
+  transform: rotateY(0deg);
+}
+
+@media screen and (min-width: 768px) {
+  .review-list {
+    flex-direction: row;
+  }
+  .review-card{
+    max-width: 354px;
+  }
 }
 
 
-.review-card:is(:hover, :focus) .review-card-back {
-    transform: rotateY(0deg);
+@media screen and (min-width: 1440px) {
+  .review-list > .review-card:nth-child(3) {
+    display: block;
   }
+  .review-card {
+    width: calc(33% - 10px);
+  }
+}

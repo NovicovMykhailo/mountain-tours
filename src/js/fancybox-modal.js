@@ -26,8 +26,6 @@ Fancybox.bind('[data-fancybox]', {
               return "<span class='dot'></span>";
             },
           });
-      }else{
-      
       }
     },
     close: data => {

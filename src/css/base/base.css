@@ -1,0 +1,112 @@
+
+
+html::-webkit-scrollbar{
+  display:none;
+}
+body {
+  color: var(--LightText);
+  margin: 0;
+  display: flex;
+  place-items: start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+}
+
+
+
+a {
+  font-weight: 500;
+}
+
+
+.btn-primary {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: none;
+  height: 52px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--LightText);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+  transition: all var(--base-transition);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-text);
+  color: var(--LightText);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.is-close-btn{
+  position: absolute;
+  top: 40px !important;
+  right: 40px !important;
+  width: 40px !important;
+  height:40px !important;
+
+
+}
+.is-close-btn > svg{
+  stroke: var(--secondary-text) !important
+}
+.tour .is-close-btn > svg{
+  stroke: white !important
+}
+.fancybox__backdrop{
+background-color: #20232199 !important;
+}
+.fancybox__slide::-webkit-scrollbar{
+  display: none !important;
+}
+
+
+
+@media screen and (min-width: 768px){
+  .btn-primary{
+    max-width: 394px;
+    height: 56px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px){
+  .btn-primary{
+    width: 575px;
+    height: 69px;
+    font-size: 24px;
+  }
+}
