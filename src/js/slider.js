@@ -5,7 +5,7 @@ $('.gallery-list').slick({
   dots: false,
   initialSlide: 4,
   appendArrows: '.slider-arrows',
-  centerPadding: '20px',
+
   prevArrow: '.left',
   nextArrow: '.right',
   focusOnSelect: true,
@@ -18,7 +18,6 @@ $('.gallery-list').slick({
       breakpoint: 745,
       settings: {
         centerMode: false,
-        centerPadding: '0',
         slidesToShow: 2,
         slidesToScroll: 1,
       }
