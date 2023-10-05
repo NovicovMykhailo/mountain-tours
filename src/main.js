@@ -1,8 +1,7 @@
 //libs
-import './js/aos'
-import '../node_modules/default-passive-events/dist/index'
-// Default theme
-import '@splidejs/splide/css';
+import './js/aos' // aos animation lib
+import '../node_modules/default-passive-events/dist/index' // service module
+import '@splidejs/splide/css'; // Default slider theme
 
 //inits
 import './js/scroll';

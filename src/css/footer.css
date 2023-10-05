@@ -3,7 +3,7 @@
   gap: 28px;
   background-color: #202321;
   color: var(--LightText);
-  /* width: 100%; */
+overflow: hidden; 
   display: flex;
   flex-direction: column;
 

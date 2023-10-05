@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       0: {
         perPage: 3,
-        fixedWidth: '280px',
+        fixedWidth: '90%',
         focus: 'center',
       },
     },

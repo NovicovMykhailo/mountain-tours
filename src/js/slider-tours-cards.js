@@ -3,9 +3,6 @@
 $('.upcoming-card-list').slick({
   arrows: true,
   dots: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  initialSlide: 1,
   infinite: false,
   appendArrows: '.slider-arrows-tourcards',
   prevArrow: '.prev',
@@ -14,6 +11,11 @@ $('.upcoming-card-list').slick({
   responsive: [
     {
       breakpoint: 1440,
+      settings:{
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 1,
+      }
     },
     {
       breakpoint: 745,
@@ -26,7 +28,14 @@ $('.upcoming-card-list').slick({
     {
       breakpoint: 375,
       settings: {
-        centerPadding: '20px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+      }
+    },
+    {
+      breakpoint: 0,
+      settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
 
