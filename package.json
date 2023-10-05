@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.22",
+    "@splidejs/splide": "^4.1.4",
     "aos": "^3.0.0-beta.6",
     "default-passive-events": "^2.0.0",
     "vite-plugin-full-reload": "^1.0.5",

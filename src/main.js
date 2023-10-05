@@ -1,6 +1,8 @@
 //libs
 import './js/aos'
 import '../node_modules/default-passive-events/dist/index'
+// Default theme
+import '@splidejs/splide/css';
 
 //inits
 import './js/scroll';
