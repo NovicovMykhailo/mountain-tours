@@ -1,58 +1,46 @@
 .gallery {
-  /* position: relative; */
-  /* height: 700px; */
   padding-left: 0;
   padding-right: 0;
-  /* overflow: hidden;
-  max-width: 80%; */
 }
 
 .gallery-list {
-
-  /* display: flex;
-  flex-direction: column; */
-  /* margin: 0 auto; */
   width: 100vw !important;
-  /* width: 300px !important; */
-  /* position: absolute; */
-
 }
 
 .gallery-item {
   overflow: hidden;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0 10px;
-
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  width: 280px ;
+  height: auto;
   cursor: pointer;
   transition: transform 0.4s ease;
 }
-.gallery-item > a {
-  width: 280px !important;
 
-}
 .gallery-item:hover {
   transform: scale(0.95);
 }
 /* Controls */
 .slider-arrows {
-  width: 140px;
+  width: 96px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 40px auto 80px auto;
+  margin: 24px auto 52px auto;
 }
 .slider-arrow {
-  padding: 10px;
-  width: 60px;
-  height: 60px;
-
+  padding: 0px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   fill: #a3a5a3;
   transition: fill var(--base-transition);
+}
+
+.slider-arrow > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .left {
   rotate: 180deg;
@@ -63,23 +51,53 @@
 
 @media screen and (min-width: 768px) {
   .gallery {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
     max-width: 768px;
+    overflow: hidden;
   }
-  .gallery-item{
-    width: 100%;
+  .gallery-item {
+    width: 354px;
+    overflow: hidden;
+    /* max-width: 354px; */
+    margin: 0 10px;
   }
+
 
   .gallery-list {
-    width: 100%;
+    width: 100% !important ;
+  }
+  .slider-arrow {
+    width: 32px;
+    height: 32px;
+  }
+  .slider-arrows {
+    width: 104px;
+    margin: 32px auto 80px auto;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .gallery {
+
     max-width: 1440px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
-  .gallery-item {
-    width: 575px;
-    height: 445px;
+  .gallery-item >a{
+    width: 575px !important;
+
+  }
+  
+
+  .slider-arrow {
+    width: 60px;
+    height: 60px;
+  }
+  .slider-arrows {
+    width: 140px;
+    margin: 40px auto 80px auto;
   }
 }

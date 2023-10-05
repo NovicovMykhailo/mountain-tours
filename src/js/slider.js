@@ -3,31 +3,39 @@ $('.gallery-list').slick({
   slidesToScroll: 1,
   arrows: true,
   dots: false,
-  initialSlide: 4,
+  initialSlide: 0,
+  infinite: false,
   appendArrows: '.slider-arrows',
   slidesToShow: 1,
   slidesToScroll: 1,
   centerMode: true,
   variableWidth: false,
-
   prevArrow: '.left',
   nextArrow: '.right',
   focusOnSelect: true,
   mobileFirst: true,
   responsive: [
     {
-      breakpoint: 1440,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      centerMode: false,
+      breakpoint: 1439,
+      settings: {
+        variableWidth: false,
+        initialSlide: 4,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: false,
+      },
     },
     {
       breakpoint: 745,
       settings: {
+        variableWidth: false,
         centerMode: false,
+        initialSlide: 4,
         slidesToShow: 2,
         slidesToScroll: 1,
-      }
+        infinite: false,
+      },
     },
     {
       breakpoint: 375,
@@ -35,11 +43,8 @@ $('.gallery-list').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        variableWidth: false,
-
-      }
+        variableWidth: true,
+      },
     },
-  ]
-})
-
-
+  ],
+});
