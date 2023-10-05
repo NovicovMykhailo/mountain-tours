@@ -1,6 +1,7 @@
 .section {
   padding: 52px 32px 0 32px;;
-  margin: 0 auto;
+
+  width: 100vw;
 
 }
 
@@ -28,6 +29,7 @@
 @media screen and (min-width: 768px) {
   .section {
     padding: 80px 20px 0 20px;
+    margin: 0 auto;
   }
   .section-title{
     font-size: 52px;

@@ -5,6 +5,10 @@ $('.gallery-list').slick({
   dots: false,
   initialSlide: 4,
   appendArrows: '.slider-arrows',
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  variableWidth: false,
 
   prevArrow: '.left',
   nextArrow: '.right',
@@ -13,6 +17,9 @@ $('.gallery-list').slick({
   responsive: [
     {
       breakpoint: 1440,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      centerMode: false,
     },
     {
       breakpoint: 745,
@@ -25,11 +32,10 @@ $('.gallery-list').slick({
     {
       breakpoint: 375,
       settings: {
-        centerPadding: '20px',
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: false,
-        variableWidth: true,
+        centerMode: true,
+        variableWidth: false,
 
       }
     },

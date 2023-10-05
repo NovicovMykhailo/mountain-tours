@@ -1,7 +1,4 @@
-.fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn {
-  padding-top: 0px !important;
-  padding: 4px !important;
-}
+
 .slick-dots {
   display: flex;
   gap: 12px;
@@ -96,4 +93,11 @@
   gap: 28px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width:768px){
+
+}
+@media screen and (min-width:1440px){
+
 }

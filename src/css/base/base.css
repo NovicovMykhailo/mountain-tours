@@ -72,27 +72,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.is-close-btn{
-  position: absolute;
-  top: 40px !important;
-  right: 40px !important;
-  width: 40px !important;
-  height:40px !important;
 
-
-}
-.is-close-btn > svg{
-  stroke: var(--secondary-text) !important
-}
-.tour .is-close-btn > svg{
-  stroke: white !important
-}
-.fancybox__backdrop{
-background-color: #20232199 !important;
-}
-.fancybox__slide::-webkit-scrollbar{
-  display: none !important;
-}
 
 
 

@@ -1,0 +1,51 @@
+.with-fancybox {
+  --fancybox-scrollbar-compensate: 0px !important;
+  overflow-y: hidden;
+}
+
+.fancybox__container:not(.is-compact) .fancybox__slide.has-close-btn {
+  padding-top: 0px !important;
+  padding: 4px !important;
+}
+
+.fancybox__slide,
+.fancybox__viewport {
+  width: 100vw !important;
+  height: 100vh !important;
+  padding: 0 !important;
+}
+.is-close-btn {
+  background-color: transparent !important;
+  width: 30px;
+  height: 30px;
+  top: 12px;
+  right: 12px;
+}
+
+
+
+.is-close-btn > svg{
+  stroke: var(--secondary-text) !important
+}
+.tour .is-close-btn > svg{
+  stroke: white !important
+}
+.fancybox__backdrop{
+background-color: #20232199 !important;
+}
+.fancybox__slide::-webkit-scrollbar{
+  display: none !important;
+}
+
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1440px) {
+  .is-close-btn{
+    position: absolute;
+    top: 40px !important;
+    right: 40px !important;
+    width: 40px !important;
+    height:40px !important;
+  }
+}

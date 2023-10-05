@@ -36,7 +36,7 @@
 }
 .form-descr {
   font-weight: 400;
-  width: 243px;
+  max-width: 243px;
   color: var(--secondary-text);
   margin: 20px auto 24px auto;
   font-size: 14px;
