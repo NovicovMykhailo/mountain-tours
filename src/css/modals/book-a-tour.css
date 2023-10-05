@@ -76,55 +76,52 @@
 }
 
 @media screen and (min-width:768px){
+  .book-a-tour {
+    width: 478px;
+    padding:  60px 66px !important;
+
+  }
+
+  .modal-title {
+    font-size: 32px;
+    margin-bottom: 24px ;
+  }
+  .modal-deskr {
+    max-width: 100%;
+    font-size: 18px;
+    margin: 0 auto 32px auto;
+  }
+  .modal-form {
+    gap: 28px;
+  }
   
 }
 @media screen and (min-width:1440px){
   .book-a-tour {
     width: 774px;
-    padding:  60px 100px !important;
-    display: none;
-    font-family: Montserrat;
+    padding: 116px  100px  60px 100px!important;
+
   }
-  .modal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-  
-  }
-  
   .modal-title {
-    color: var(--primary-text);
-    text-align: center;
-  
     font-size: 60px;
-    font-weight: 400;
-    margin: 56px 0 28px 0;
+    margin-bottom:28px;
   }
   .modal-deskr {
-    width: 523px;
-    color: var(--secondary-text);
-    text-align: center;
+    max-width: 95%; 
     font-size: 24px;
-    font-weight: 400;
     margin: 0 auto 32px auto;
   }
   .modal-options-label {
-    color: var(--primary-text);
     font-size: 24px;
-    font-weight: 400;
-    position: relative;
     padding-left: 32px;
     margin-left: 13px;
   }
   .modal-options-label > input {
-    position: absolute;
     opacity: 0;
-    cursor: pointer;
     height: 0;
     width: 0;
   }
   .checkmark {
-    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -152,7 +149,7 @@
   
   
   .modal-btn{
-      margin-top:16px;
+    max-width: 100%;
   }
   
 }

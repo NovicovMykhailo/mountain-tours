@@ -1,7 +1,5 @@
-
-
-html::-webkit-scrollbar{
-  display:none;
+html::-webkit-scrollbar {
+  display: none;
 }
 body {
   color: var(--LightText);
@@ -14,12 +12,9 @@ body {
   position: relative;
 }
 
-
-
 a {
   font-weight: 500;
 }
-
 
 .btn-primary {
   display: flex;
@@ -60,8 +55,6 @@ a {
   margin: -1px;
 }
 
-
-
 .is-hidden {
   pointer-events: none;
   opacity: 0;
@@ -72,19 +65,15 @@ body.modal-open {
   overflow: hidden;
 }
 
-
-
-
-
-@media screen and (min-width: 768px){
-  .btn-primary{
+@media screen and (min-width: 768px) {
+  .btn-primary {
     max-width: 394px;
     height: 56px;
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1440px){
-  .btn-primary{
+@media screen and (min-width: 1440px) {
+  .btn-primary {
     width: 575px;
     height: 69px;
     font-size: 24px;

@@ -2,13 +2,16 @@ import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 Fancybox.bind('[data-fancybox]', {
+  type: "inline",
   fullScreen: {
     requestOnStart: true,
   },
+
   Carousel: {
     Navigation: false,
-  },
+    
 
+  },
   on: {
     reveal: data => {
       if (!data.container.outerText.includes('Book a tour')) {
@@ -35,18 +38,49 @@ Fancybox.bind('[data-fancybox]', {
         sliders.forEach(item => {
           $(item).slick('unslick');
         });
-
-        $('.gallery-list').slick({
-          slidesToShow: 2,
-          slidesToScroll: 1,
+        $('.upcoming-card-list').slick({
           arrows: true,
           dots: false,
-          initialSlide: 4,
-          appendArrows: '.slider-arrows',
-          prevArrow: '.left',
-          nextArrow: '.right',
-          focusOnSelect: true,
-        });
+          infinite: false,
+          appendArrows: '.slider-arrows-tourcards',
+          prevArrow: '.prev',
+          nextArrow: '.next',
+          mobileFirst: true,
+          responsive: [
+            {
+              breakpoint: 1440,
+              settings:{
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 1,
+              }
+            },
+            {
+              breakpoint: 745,
+              settings: {
+                centerPadding: '20px',
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 375,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+        
+              }
+            },
+            {
+              breakpoint: 0,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+        
+              }
+            },
+          ]
+        })
       }
     },
   },
