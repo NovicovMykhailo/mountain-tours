@@ -18,7 +18,7 @@ function handleSubmit(e) {
     To: 'mikenovicov@gmail.com',
     From: 'mikenovicov@gmail.com',
     Subject: 'Customer request ->',
-    Body: `${requestMail(e.target.children)}`,
+    Body: requestMail(e.target.children),
   }).then(message => {
     bottomForm.reset();
     if (message === 'OK') {
