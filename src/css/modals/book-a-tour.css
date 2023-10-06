@@ -55,6 +55,10 @@
   cursor: pointer;
   transition: all var(--base-transition);
 }
+
+.checkmark.invalid{
+  border-color:crimson;
+}
 .modal-options-label:is(:hover, :focus) .checkmark {
   background-color: #e7e6e6;
 }
