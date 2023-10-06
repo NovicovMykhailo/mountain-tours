@@ -17,6 +17,8 @@
     "@splidejs/splide": "^4.1.4",
     "aos": "^3.0.0-beta.6",
     "default-passive-events": "^2.0.0",
+    "notiflix": "^3.2.6",
+    "sendmail": "^1.6.1",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

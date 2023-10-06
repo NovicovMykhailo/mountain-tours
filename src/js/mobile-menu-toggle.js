@@ -7,6 +7,7 @@ const links = document.querySelectorAll('[data-links');
 
 function closeMenu(e) {
   e.preventDefault();
+  window.document.body.classList.toggle('body-overflow')
   menuBtn.classList.toggle('active');
   heroBox.classList.toggle('active');
   logo.classList.toggle('active');
@@ -15,4 +16,5 @@ function closeMenu(e) {
 }
 
 menuBtn.addEventListener('click', closeMenu);
+
 links.forEach(link => link.addEventListener('click', closeMenu));

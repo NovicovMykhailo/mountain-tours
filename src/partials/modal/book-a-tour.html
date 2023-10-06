@@ -4,20 +4,23 @@
     You can leave your application here and our manager will call you
     within 10 minutes
   </p>
-  <form class="modal-form">
+  <form class="modal-form" id="modal-form">
     <input
       class="form-fields"
       type="text"
       name="name"
       placeholder="Your name*"
       autocomplete="off"
+      required
     />
     <input
       class="form-fields"
       type="tel"
       name="phoneNumber"
+      pattern="^\+?\d*$" 
       placeholder="Phone number*"
       autocomplete="off"
+      required
     />
     <label class="modal-options-label"
       >Ascent to Hoverla
@@ -26,12 +29,12 @@
     ></label>
     <label class="modal-options-label"
       >Ski tour to Bukovel
-      <input type="checkbox" name="ski-bukovel" />
+      <input type="checkbox" name="skiBukovel" />
       <span class="checkmark"></span
     ></label>
     <label class="modal-options-label"
       >Week in Carpathians
-      <input type="checkbox" name="week-in-carpatians" />
+      <input type="checkbox" name="weekInCarpatians" />
       <span class="checkmark"></span
     ></label>
     <button class="btn-primary modal-btn" type="submit">CALL ME</button>

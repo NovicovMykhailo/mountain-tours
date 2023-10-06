@@ -7,7 +7,8 @@
   top: 0;
   left: 0;
   width: 233px;
-  height: 100vh;
+  /* height: 95%; */
+  height: 100%;
   background: #202321b3;
   transform: translateX(-100%);
   transition: transform 0.5s;
@@ -83,4 +84,12 @@
   .modal-backdrop {
     display: none;
   }
+}
+
+
+@media screen and (max-width: 374px) {
+  .mob-menu {
+    height: 100%;
+  }
+
 }

@@ -79,3 +79,8 @@ body.modal-open {
     font-size: 24px;
   }
 }
+
+.body-overflow{
+  overflow: hidden !important;
+  /* position: fixed !important; */
+}

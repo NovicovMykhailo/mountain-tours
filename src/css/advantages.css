@@ -1,5 +1,6 @@
 .advantages {
   position: relative;
+
 }
 
 /* List */
@@ -117,6 +118,9 @@
     width: 40px;
     height: 40px;
     left: 44px;
+  }
+  .advantages-list {
+    padding-bottom: 0;
   }
 }
 

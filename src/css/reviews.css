@@ -109,3 +109,12 @@
     width: calc(33% - 10px);
   }
 }
+
+@media(hover: hover) and (pointer: fine) {
+  .review-card:is(:hover, :focus) .review-card-front {
+    transform: rotateY(-180deg);
+  }
+  .review-card:is(:hover, :focus) .review-card-back {
+  transform: rotateY(0deg);
+}
+}

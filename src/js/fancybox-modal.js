@@ -1,5 +1,6 @@
 import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
+// import '../../node_modules/default-passive-events/dist/index' // service module
 
 Fancybox.bind('[data-fancybox]', {
   type: "inline",
@@ -9,12 +10,15 @@ Fancybox.bind('[data-fancybox]', {
 
   Carousel: {
     Navigation: false,
-    
-
+    closeButton: true,
+    infinite: false,
   },
+  
   on: {
     reveal: data => {
+  
       if (!data.container.outerText.includes('Book a tour')) {
+        window.document.body.classList.add('body-overflow')
         $('.modal-slider')
           .not('.slick-clone')
           .slick({
@@ -23,7 +27,7 @@ Fancybox.bind('[data-fancybox]', {
             initialSlide: 0,
             arrows: false,
             dots: true,
-            infinite: false,
+            infinite: true,
 
             customPaging: function (slider, i) {
               return "<span class='dot'></span>";
@@ -32,6 +36,7 @@ Fancybox.bind('[data-fancybox]', {
       }
     },
     close: data => {
+      window.document.body.classList.remove('body-overflow')
       if (!data.container.outerText.includes('Book a tour')) {
         const sliders = document.querySelectorAll('.slick-initialized');
 

@@ -18,17 +18,23 @@
   background-color: #a3a5a3;
   cursor: pointer;
 }
-
 .tour {
   display: none;
-  width: 1170px;
+  width: 100%;
   padding: 0 !important;
 }
+.tour-container{
+
+  width: 100vw;
+  z-index: 10;
+}
+
 .tour-slide {
   font-family: Montserrat;
   color: var(--LightText);
   padding: 56px 48px;
-  width: 480px;
+  width: 100vw;
+  /* max-width: 480px; */
   height: 624px;
 
   position: relative;
@@ -87,7 +93,7 @@
 
 .tour-bottom-container {
   padding: 28px 15px;
-
+  width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -135,6 +141,11 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  .tour {
+    display: none;
+    width: 1170px;
+    padding: 0 !important;
+  }
   .tour-container {
     height: 748px;
   }

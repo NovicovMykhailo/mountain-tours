@@ -57,6 +57,7 @@
   background: transparent;
   cursor: pointer;
   color: var(--secondary-text);
+  width: 100%;
 }
 
 .form-fields,
