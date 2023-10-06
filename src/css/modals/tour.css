@@ -102,6 +102,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .tour-container, .tour-bottom-container{
+    width: 100%;
+  }
  
   .tour-slide {
     padding: 60px;
@@ -135,6 +138,7 @@
     font-size: 20px;
   }
   .tour-bottom-container {
+   
     padding-top: 40px;
     padding-bottom: 40px;
     gap: 24px;
