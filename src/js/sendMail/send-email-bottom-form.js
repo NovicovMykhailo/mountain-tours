@@ -15,7 +15,7 @@ function handleSubmit(e) {
     Host: 'smtp.elasticemail.com',
     Username: 'mikenovicov@gmail.com',
     Password: '2FBFB5B5CE882236870128C69FD7EA81C786',
-    To: 'xodof51627@htoal.com',
+    To: 'mikenovicov@gmail.com',
     From: 'mikenovicov@gmail.com',
     Subject: 'Customer request ->',
     Body: `${requestMail(e.target.children)}`,
