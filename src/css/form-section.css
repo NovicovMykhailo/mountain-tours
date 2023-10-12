@@ -8,7 +8,7 @@
   font-family: Montserrat;
 
   background-color: #565554;
-  background-image: url('./img/photos/bottom-form/image_3_bottom-form-mob.jpg');
+  background-image: url('../img/photos/bottom-form/image_3_bottom-form-mob.jpg');
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,7 +71,7 @@
 
 @media screen and (min-width: 768px) {
   .form {
-    background-image: url('./img/photos/bottom-form/image_3_bottom-form-tabl.jpg');
+    background-image: url('../img/photos/bottom-form/image_3_bottom-form-tabl.jpg');
   }
   .form-container {
     max-width: 478px;
@@ -99,7 +99,7 @@
 
 @media screen and (min-width: 1440px) {
   .form {
-    background-image: url('./img/photos/bottom-form/image_3_bottom-form-dsk.jpg');
+    background-image: url('../img/photos/bottom-form/image_3_bottom-form-dsk.jpg');
   }
   .form-container {
     max-width: 774px;
@@ -130,21 +130,20 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .form {
-    background-image: url('./img/photos/bottom-form/image_3_bottom-form-mob@2x.jpg');
+    background-image: url('../img/photos/bottom-form/image_3_bottom-form-mob@2x.jpg');
   }
-  @media screen and (min-width: 768px) {
-    .form {
-      background-image: url('./img/photos/bottom-form/image_3_bottom-form-tabl@2x.jpg');
-    }
+}
+
+@media screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .form {
+    background-image: url('../img/photos/bottom-form/image_3_bottom-form-tabl@2x.jpg');
   }
-  @media screen and (min-width: 1440px) {
-    .form {
-      background-image: url('./img/photos/bottom-form/image_3_bottom-form-dsk@2x.jpg');
-    }
+}
+
+@media screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+  .form {
+    background-image: url('../img/photos/bottom-form/image_3_bottom-form-dsk@2x.jpg');
   }
 }
