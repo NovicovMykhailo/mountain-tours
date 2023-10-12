@@ -15,7 +15,7 @@ Fancybox.bind('[data-fancybox = gallery]', {
         />`;
       });
 
-      rez += `<img src="${slide.src}" alt="" loading="lazy"/>`;
+      rez += `<img src="${slide.src}" alt="mauntains view"/>`;
 
       rez += '</picture>';
 
