@@ -24,14 +24,14 @@
   height: 40px;
   will-change: transform;
   transition: transform var(--base-transition), opacity 0.5s;
-  opacity: 1
+  opacity: 1;
 }
 .logo:hover,
 .logo:focus {
   transform: scale(1.03);
 }
 
-.logo.active{
+.logo.active {
   opacity: 0;
 }
 
@@ -82,7 +82,11 @@
   .header-nav-list {
     display: flex;
   }
-  .logo,
+  .logo {
+    transform: scale(1.55);
+    position: relative;
+    top: 3px;
+  }
   .burger-open {
     width: 60px;
     height: 60px;
@@ -90,7 +94,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   .header {
     display: flex;
     padding: 30px 0;
@@ -106,10 +109,10 @@
     background-color: transparent;
     z-index: 10;
   }
-  .header-nav{
+  .header-nav {
     display: block;
   }
-  .burger-open{
+  .burger-open {
     display: none;
   }
 }
