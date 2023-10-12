@@ -11,6 +11,7 @@ import "./js/slider-tours-cards"
 import './js/slider';
 import './js/sendMail/send-email-bottom-form'
 import './js/sendMail/send-email-from-form'
+import './js/scroll-to-top'
 
 
 

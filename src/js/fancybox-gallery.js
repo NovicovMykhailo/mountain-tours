@@ -15,7 +15,7 @@ Fancybox.bind('[data-fancybox = gallery]', {
         />`;
       });
 
-      rez += `<img src="${slide.src}" alt="" />`;
+      rez += `<img src="${slide.src}" alt="" loading="lazy"/>`;
 
       rez += '</picture>';
 

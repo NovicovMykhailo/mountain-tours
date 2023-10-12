@@ -1,0 +1,46 @@
+.scroll-to-top-el {
+  opacity: 0;
+  position: fixed;
+  z-index: 10000;
+  bottom: 3%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  transition: all var(--base-transition);
+  mix-blend-mode: difference;
+}
+.scroll-to-top_icon {
+  position: absolute;
+  transform: translateX(-32%) translateY(33%) rotate(-90deg);
+  bottom: 50%;
+  left: 50%;
+}
+
+.scroll-to-top-el:hover {
+  transform: scale(1.1);
+}
+
+.scroll-to-top-el.visible {
+  opacity: 1;
+}
+
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top-el{
+    bottom: 6%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+  }
+
+
+}
+@media screen and (min-width: 1440px) {
+  .scroll-to-top-el{
+    bottom: 3%;
+    right: 5%;
+  }
+}
