@@ -1,14 +1,37 @@
 <div id="tour-1" class="tour">
-
   <div class="tour-container modal-slider">
-
     <div class="tour-slide">
-      <img
-        class="tour-card-bg"
-        src="./img/photos/tour1/dsk/Rectangle-57t1-dsk@2x.jpg"
-        srcset="./img/photos/tour1/dsk/Rectangle-57t1-dsk.jpg 1x, ./img/photos/tour1/dsk/Rectangle-57t1-dsk@2x.jpg 2x"
-        alt="mountain species"
-      />
+      <picture >
+        <source
+          media="(min-width: 1440px) "
+          srcset="
+            ./img/photos/tour1/dsk/Rectangle-57t1-dsk.jpg    1x,
+            ./img/photos/tour1/dsk/Rectangle-57t1-dsk@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/photos/tour1/tabl/Rectangle82.jpg    1x,
+            ./img/photos/tour1/tabl/Rectangle82@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/photos/tour1/sm/Rectangle73.jpg    1x,
+            ./img/photos/tour1/sm/Rectangle73@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img class="tour-card-bg"
+          src="./img/photos/tour1/dsk/Rectangle-57t1-dsk@2x.jpg"
+          type="image/jpeg"
+          alt="mountain species"
+        />
+      </picture>
       <h2 class="tours-title">Ascent to Hoverla</h2>
       <span class="tour-stripe">
         <span class="tour-days">1 day</span>
@@ -25,12 +48,38 @@
     </div>
 
     <div class="tour-slide">
-            <img
-        class="tour-card-bg"
-        src="./img/photos/tour1/dsk/Rectangle-65t1-dsk@2x.jpg"
-        srcset="./img/photos/tour1/dsk/Rectangle-65t1-dsk.jpg 1x, ./img/photos/tour1/dsk/Rectangle-65t1-dsk@2x.jpg 2x"
-        alt="mountain species"
-      />
+      <picture >
+        <source
+          media="(min-width: 1440px) "
+          srcset="
+            ./img/photos/tour1/dsk/Rectangle-65t1-dsk.jpg    1x,
+            ./img/photos/tour1/dsk/Rectangle-65t1-dsk@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/photos/tour1/tabl/Rectangle83        1x,
+            ./img/photos/tour1/tabl/Rectangle83@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/photos/tour1/sm/overlay.jpg    1x,
+            ./img/photos/tour1/sm/overlay@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img class="tour-card-bg"
+          src="./img/photos/tour1/dsk/Rectangle-65t1-dsk@2x.jpg"
+          type="image/jpeg"
+          alt="mountain species"
+        />
+      </picture>
+
       <h2 class="tours-title">Ascent to Hoverla</h2>
       <span class="tour-stripe">
         <span class="tour-days">2 day</span>
@@ -47,12 +96,38 @@
     </div>
 
     <div class="tour-slide">
-          <img
-        class="tour-card-bg"
-        src="./img/photos/tour1/dsk/Rectangle-66t1-dsk@2x.jpg"
-        srcset="./img/photos/tour1/dsk/Rectangle-66t1-dsk.jpg 1x, ./img/photos/tour1/dsk/Rectangle-66t1-dsk@2x.jpg 2x"
-        alt="mountain species"
-      />
+      <picture >
+        <source
+          media="(min-width: 1440px) "
+          srcset="
+            ./img/photos/tour1/dsk/Rectangle-66t1-dsk.jpg    1x,
+            ./img/photos/tour1/dsk/Rectangle-66t1-dsk@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/photos/tour1/tabl/Rectangle84        1x,
+            ./img/photos/tour1/tabl/Rectangle84@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/photos/tour1/sm/Rectangle57.jpg    1x,
+            ./img/photos/tour1/sm/Rectangle57@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img class="tour-card-bg"
+          src="./img/photos/tour1/dsk/Rectangle-66t1-dsk@2x.jpg"
+          type="image/jpeg"
+          alt="mountain species"
+        />
+      </picture>
+
       <h2 class="tours-title">Ascent to Hoverla</h2>
       <span class="tour-stripe">
         <span class="tour-days">3 day</span>
@@ -70,13 +145,8 @@
 
   <div class="tour-bottom-container">
     <p class="tour-price">UAH 4,499/person</p>
-    <button
-      class="btn-primary"
-      data-fancybox="modal"
-      data-src="#book-a-tour"
-    >
+    <button class="btn-primary" data-fancybox="modal" data-src="#book-a-tour">
       BOOK A TOUR
     </button>
   </div>
-  
 </div>

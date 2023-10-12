@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     type: 'loop',
     arrows: false,
     perMove: 1,
+    autoplay: 'playing',
     start: 0,
     pagination: false,
     trimSpace: false,

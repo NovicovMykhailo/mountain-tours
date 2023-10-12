@@ -7,7 +7,6 @@
   top: 0;
   left: 0;
   width: 233px;
-  /* height: 95%; */
   height: 100%;
   background: #202321b3;
   transform: translateX(-100%);
@@ -17,6 +16,7 @@
 
 .mob-menu.active,
 .modal-backdrop.active {
+
   transform: translateX(0);
 }
 

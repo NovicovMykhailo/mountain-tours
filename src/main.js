@@ -1,5 +1,5 @@
 //libs
-// import './js/aos' // aos animation lib
+import './js/aos' // aos animation lib
 import '@splidejs/splide/css'; // Default slider theme
 import './js/toasts';
 //inits

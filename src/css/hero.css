@@ -1,15 +1,13 @@
 .hero {
   background-color: #565554;
   background-image: image-set(
-    url('../img//photos/hero/hero_desk_1920hero-mob.jpg') 1x,
-    url('../img//photos/hero/hero_desk_1920hero-mob@2x.jpg') 2x
+    url('../img/photos/hero/hero_desk_1920hero-mob.jpg') 1x,
+    url('../img/photos/hero/hero_desk_1920hero-mob@2x.jpg') 2x
   );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  /* width: 100vw;
-  height: 100vh; */
   padding: 188px 30px 193px 30px;
   z-index: -1;
 }
@@ -57,8 +55,8 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: image-set(
-      url('../img//photos/hero/hero_desk_1920hero-tab.jpg') 1x,
-      url('../img//photos/hero/hero_desk_1920hero-tab@2x.jpg') 2x
+      url('../img/photos/hero/hero_desk_1920hero-tab.jpg') 1x,
+      url('../img/photos/hero/hero_desk_1920hero-tab@2x.jpg') 2x
     );
     padding: 180px 20px 185px 20px;
   }
@@ -80,8 +78,8 @@
   .hero {
     background-color: #565554;
     background-image: image-set(
-      url('../img//photos/hero/hero_desk_1920hero-dsk.jpg') 1x,
-      url('../img//photos/hero/hero_desk_1920hero-dsk@2x.jpg') 2x
+      url('../img/photos/hero/hero_desk_1920hero-dsk.jpg') 1x,
+      url('../img/photos/hero/hero_desk_1920hero-dsk@2x.jpg') 2x
     );
     background-repeat: no-repeat;
     background-size: cover;
