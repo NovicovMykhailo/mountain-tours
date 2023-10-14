@@ -64,7 +64,7 @@
   transition: transform var(--base-transition);
   transform: perspective(600px) rotateY(0deg);
 }
-.review-card:is(:hover, :focus) .review-card-front {
+.review-card:is(:hover, :focus, :active) .review-card-front {
   transform: rotateY(-180deg);
 }
 .review-card-back {
@@ -87,7 +87,7 @@
   object-position: bottom;
 
 }
-.review-card:is(:hover, :focus) .review-card-back {
+.review-card:is(:hover, :focus, :active) .review-card-back {
   transform: rotateY(0deg);
 }
 
@@ -111,10 +111,10 @@
 }
 
 @media(hover: hover) and (pointer: fine) {
-  .review-card:is(:hover, :focus) .review-card-front {
+  .review-card:is(:hover, :focus, :active) .review-card-front {
     transform: rotateY(-180deg);
   }
-  .review-card:is(:hover, :focus) .review-card-back {
+  .review-card:is(:hover, :focus, :active) .review-card-back {
   transform: rotateY(0deg);
 }
 }

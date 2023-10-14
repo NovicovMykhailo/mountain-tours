@@ -12,10 +12,10 @@ const baseOptions = {
 
 AOS.init({
     ...baseOptions,
-    disable: function() {
-        var maxWidth = 768;
-        return window.innerWidth <= maxWidth;
-      }
+    // disable: function() {
+    //     var maxWidth = 768;
+    //     return window.innerWidth <= maxWidth;
+    //   }
   });
 
 
