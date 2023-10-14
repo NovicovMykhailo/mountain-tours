@@ -1,7 +1,7 @@
 # Travel agency website
 **One-page landing type site**
 
-![background](./src/img/photos/hero/hero_desk_1920hero-dsk.jpg)
+![background](./src/img/photos/bottom-form/image_3_bottom-form-mob.jpg)
 
 > On this site you can familiarize yourself with the tours and also order your favorite. 
 Read about the tour company, see reviews, browse the gallery.
