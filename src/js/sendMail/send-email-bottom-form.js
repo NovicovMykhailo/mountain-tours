@@ -16,7 +16,7 @@ function handleSubmit(e) {
     Username: 'mikenovicov@gmail.com',
     Password: '2FBFB5B5CE882236870128C69FD7EA81C786',
     To: 'mikenovicov@gmail.com',
-    From: 'mikenovicov@gmail.com',
+    From: 'b9392265327c7f@lamasticots.com',
     Subject: 'Customer request ->',
     Body: requestMail(e.target.children),
   }).then(message => {
